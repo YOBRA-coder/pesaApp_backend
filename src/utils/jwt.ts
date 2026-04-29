@@ -23,6 +23,7 @@ export async function verifyRefreshToken(token: string): Promise<TokenPayload> {
 
 export async function generateTokenPair(userId: string, role: string) {
   const jti = uuidv4();
+<<<<<<< HEAD
 const secret = process.env.JWT_SECRET;
 if(!secret){
 throw new Error("❌ MISSING JWT_SECRET IN PRODUCTION");
@@ -37,6 +38,25 @@ throw new Error("❌ MISSING JWT_SECRET IN PRODUCTION");
     { userId, role, jti },
     secret,
     { expiresIn: (process.env.JWT_REFRESH_EXPIRES_IN || '7d') as any}
+=======
+  
+const secret = process.env.JWT_SECRET;
+if (!secret) {
+  throw new Error('JWT_SECRET is not defined');
+}
+
+const accessToken = jwt.sign(
+  { userId, role, jti },
+  secret,
+  { expiresIn: (process.env.JWT_EXPIRES_IN as any) || '15m' }
+);
+
+
+  const refreshToken = jwt.sign(
+    { userId, role, jti },
+     secret,
+    { expiresIn: (process.env.JWT_REFRESH_EXPIRES_IN as any) || '7d' }
+>>>>>>> c427c325 (server config)
   );
 
   // Persist refresh token

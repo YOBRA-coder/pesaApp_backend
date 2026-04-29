@@ -1,10 +1,16 @@
 // ── ADD to crashGame.service.ts ──────────────────────────────
 // This ensures round history persists in Redis and is loaded on page refresh
+<<<<<<< HEAD
 import { redis } from '../config/redis';
 const HISTORY_KEY = 'crash:history:global';
 const MAX_HISTORY = 50;
+=======
 
-// In createRound(), after creating the round, cache history:
+//const HISTORY_KEY = 'crash:history:global';
+//const MAX_HISTORY = 50;
+>>>>>>> c427c325 (server config)
+
+/* In createRound(), after creating the round, cache history:
 export async function cacheRoundHistory(roundNumber: number, crashPoint: number) {
   const existing = await redis.get(HISTORY_KEY);
   const history = existing ? JSON.parse(existing) : [];

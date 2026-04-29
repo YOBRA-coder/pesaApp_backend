@@ -67,10 +67,17 @@ router.post('/house/deposit',
         },
       });
 
+<<<<<<< HEAD
       /* Log admin action
       await prisma.adminAuditLog.create({
         data: { userId: req.user.id, action: 'HOUSE_DEPOSIT', details: { amount }, ip: req.ip || '', userAgent: req.headers['user-agent'] || '' },
       });*/
+=======
+      // Log admin action
+     // await prisma.adminAuditLog.create({
+       // data: { userId: req.user.id, action: 'HOUSE_DEPOSIT', details: { amount }, ip: req.ip || '', userAgent: req.headers['user-agent'] || '' },
+      //});
+>>>>>>> c427c325 (server config)
 
       logger.info(`Admin ${req.user.id} deposited ${amount} to house fund`);
       res.json({ success: true, message: `KES ${amount.toLocaleString()} deposited to house fund` });
@@ -129,10 +136,17 @@ router.post('/house/withdraw',
           metadata: { adminId: req.user.id, phone: targetPhone },
         },
       });
+<<<<<<< HEAD
 /*
       await prisma.adminAuditLog.create({
         data: { userId: req.user.id, action: 'HOUSE_WITHDRAWAL', details: { amount, phone: targetPhone }, ip: req.ip || '', userAgent: req.headers['user-agent'] || '' },
       });*/
+=======
+
+     // await prisma.adminAuditLog.create({
+      //  data: { userId: req.user.id, action: 'HOUSE_WITHDRAWAL', details: { amount, phone: targetPhone }, ip: req.ip || '', userAgent: req.headers['user-agent'] || '' },
+    //  });
+>>>>>>> c427c325 (server config)
 
       logger.info(`Admin ${req.user.id} withdrew ${amount} from house to ${targetPhone}`);
       res.json({ success: true, message: `KES ${amount.toLocaleString()} withdrawal initiated to ${targetPhone}` });

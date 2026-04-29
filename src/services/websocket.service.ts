@@ -5,7 +5,7 @@ import { redis } from '../config/redis';
 import { logger } from '../utils/logger';
 import { verifyAccessToken } from '../utils/jwt';
 import { prisma } from '../config/database';
-import { cacheRoundHistory } from '../services/crashHistory.persistence';
+//import { cacheRoundHistory } from '../services/crashHistory.persistence';
 
 interface AuthedSocket extends WebSocket {
   userId?: string;
