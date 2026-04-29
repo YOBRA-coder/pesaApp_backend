@@ -3,7 +3,7 @@ import multer from 'multer';
 import { prisma } from '../config/database';
 import { authenticate } from '../middleware/auth.middleware';
 import { uploadToCloudinary } from '../services/cloudinary.service';
-import { redis } from '@/config/redis';
+import { redis } from '../config/redis';
 
 const router = Router();
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 * 1024 * 1024 } });
