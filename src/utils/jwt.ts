@@ -23,17 +23,20 @@ export async function verifyRefreshToken(token: string): Promise<TokenPayload> {
 
 export async function generateTokenPair(userId: string, role: string) {
   const jti = uuidv4();
-
+const secret = process.env.JWT_SECRET;
+if(!secret){
+throw new Error("❌ MISSING JWT_SECRET IN PRODUCTION");
+}
   const accessToken = jwt.sign(
     { userId, role, jti },
-    process.env.JWT_SECRET!,
-    { expiresIn: process.env.JWT_EXPIRES_IN || '15m' }
+    secret,
+    { expiresIn: (process.env.JWT_EXPIRES_IN || '15m' )}
   );
 
   const refreshToken = jwt.sign(
     { userId, role, jti },
-    process.env.JWT_REFRESH_SECRET!,
-    { expiresIn: process.env.JWT_REFRESH_EXPIRES_IN || '7d' }
+    secret,
+    { expiresIn: (process.env.JWT_REFRESH_EXPIRES_IN || '7d')}
   );
 
   // Persist refresh token
