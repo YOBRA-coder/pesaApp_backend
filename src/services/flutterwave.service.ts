@@ -1,4 +1,4 @@
-import Flutterwave from 'flutterwave-node-v3';
+import Flutterwave = require('flutterwave-node-v3');
 import { AppError } from '../utils/AppError';
 import { logger } from '../utils/logger';
 
