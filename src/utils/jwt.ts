@@ -30,13 +30,13 @@ throw new Error("❌ MISSING JWT_SECRET IN PRODUCTION");
   const accessToken = jwt.sign(
     { userId, role, jti },
     secret,
-    { expiresIn: (process.env.JWT_EXPIRES_IN || '15m' )}
+    { expiresIn: (process.env.JWT_EXPIRES_IN || '15m' ) as any}
   );
 
   const refreshToken = jwt.sign(
     { userId, role, jti },
     secret,
-    { expiresIn: (process.env.JWT_REFRESH_EXPIRES_IN || '7d')}
+    { expiresIn: (process.env.JWT_REFRESH_EXPIRES_IN || '7d') as any}
   );
 
   // Persist refresh token
