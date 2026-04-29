@@ -8,9 +8,8 @@ const MAX_HISTORY = 50;
 
 //const HISTORY_KEY = 'crash:history:global';
 //const MAX_HISTORY = 50;
->>>>>>> c427c325 (server config)
 
-/* In createRound(), after creating the round, cache history:
+// In createRound(), after creating the round, cache history:
 export async function cacheRoundHistory(roundNumber: number, crashPoint: number) {
   const existing = await redis.get(HISTORY_KEY);
   const history = existing ? JSON.parse(existing) : [];
