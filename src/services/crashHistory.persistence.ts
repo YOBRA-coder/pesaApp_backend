@@ -1,6 +1,6 @@
 // ── ADD to crashGame.service.ts ──────────────────────────────
 // This ensures round history persists in Redis and is loaded on page refresh
-import redis = from '../config/redis';
+import { redis } = from '../config/redis';
 const HISTORY_KEY = 'crash:history:global';
 const MAX_HISTORY = 50;
 
