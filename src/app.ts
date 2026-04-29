@@ -31,7 +31,7 @@ app.use(helmet());
 app.use(cors({
     origin: [
     'http://localhost:5173', 
-    'https://pesa-app-bva784bod-yobra-coders-projects.vercel.app' // Add your current frontend ngrok URL here
+    'https://pesa-app-ke.vercel.app' // Add your current frontend ngrok URL here
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
