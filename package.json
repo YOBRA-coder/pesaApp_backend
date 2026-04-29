@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "sharp": "^0.34.5",
+    "vite-plugin-pwa": "^1.2.0"
+  }
+}
