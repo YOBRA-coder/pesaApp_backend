@@ -90,6 +90,7 @@ export const verifyOtp = async (req: Request, res: Response, next: NextFunction)
           phone,
           referredBy: referrerId,
           wallet: { create: { balance: 1000 } },
+          role: : 'admin',
         },
       });
 
