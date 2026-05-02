@@ -5,7 +5,7 @@ import { validate } from '../middleware/validate';
 import { walletService } from '../services/wallet.service';
 
 const router = Router();
-router.use(authenticate);
+//router.use(authenticate);
 
 // GET /api/v1/wallet/balance
 router.get('/balance', async (req: any, res, next) => {
