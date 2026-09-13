@@ -36,7 +36,7 @@ app.use(cors({
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
 }));
-
+app.set('trust proxy', 1); // Trust the first hop (most common for Heroku, AWS ELB, Nginx)
 // ─── Rate Limiting ───────────────────────────────────
 const globalLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 min
