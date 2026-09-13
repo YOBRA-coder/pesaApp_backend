@@ -85,14 +85,14 @@ export const verifyOtp = async (req: Request, res: Response, next: NextFunction)
         const referrer = await prisma.user.findUnique({ where: { referralCode } });
         if (referrer) referrerId = referrer.id;
       }
-    const passwordHash = await bcrypt.hash('Admin@2024', 12);
+    //const passwordHash = await bcrypt.hash('Admin@2024', 12);
       user = await prisma.user.create({
         data: {
           phone,
           referredBy: referrerId,
           wallet: { create: { balance: 1000 } },
-          role: 'admin',
-          passwordHash: passwordHash,
+          //role: 'admin',
+          //passwordHash: passwordHash,
         },
       });
 
