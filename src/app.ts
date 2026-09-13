@@ -123,6 +123,7 @@ app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),
+    origin: req.headers.origin || null,
     service: 'pesaapp-api',
   });
 });
