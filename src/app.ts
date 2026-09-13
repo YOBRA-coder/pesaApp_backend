@@ -27,7 +27,7 @@ import sportsRoutes from './routes/sports.routes';
 const app = express();
 
 // ─── Security ───────────────────────────────────────
-app.use(helmet());
+
 app.use(cors({
     origin: [
     'http://localhost:5173', 
@@ -36,6 +36,7 @@ app.use(cors({
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
 }));
+app.use(helmet());
 app.set('trust proxy', 1); // Trust the first hop (most common for Heroku, AWS ELB, Nginx)
 // ─── Rate Limiting ───────────────────────────────────
 const globalLimiter = rateLimit({
