@@ -3,6 +3,26 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
+import adminAuthRoutes from './routes/adminAuth.routes';
+import gamesRoutes from './routes/game.routes';
+
+import { errorHandler } from './middleware/errorHandler';
+import { notFound } from './middleware/notFound';
+
+// Routes
+import authRoutes from './routes/auth.routes';
+import userRoutes from './routes/user.routes';
+import walletRoutes from './routes/wallet.routes';
+import paymentRoutes from './routes/payment.routes';
+import kycRoutes from './routes/kyc.routes';
+import signalRoutes from './routes/signal.routes';
+import billRoutes from './routes/bill.routes';
+import referralRoutes from './routes/referral.routes';
+import notificationRoutes from './routes/notification.routes';
+import adminRoutes from './routes/admin.routes';
+import adminRevenueRoutes from './routes/adminRevenue.routes';
+import sportsRoutes from './routes/sports.routes';
+import investRoutes from './routes/invest.routes';
 
 const app = express();
 
