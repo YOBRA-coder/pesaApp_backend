@@ -168,8 +168,7 @@ app.use(`${API}/bills`, billRoutes);
 app.use(`${API}/referrals`, referralRoutes);
 app.use(`${API}/notifications`, notificationRoutes);
 app.use(`${API}/admin`, adminRoutes);
-app.use(`${API}/admin`, adminRevenueRoutes);
-
+app.use(`${API}/admin`, adminRevenueRoutes); // add to existing admin routes
 
 // ─────────────────────────────────────────────
 // Error Handling

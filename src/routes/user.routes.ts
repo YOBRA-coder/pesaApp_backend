@@ -52,7 +52,7 @@ router.get('/lookup', async (req: any, res, next) => {
   } catch (e) { next(e); }
 });
 
-// GET /api/v1/users/online — returns list of online usernames
+/* GET /api/v1/users/online — returns list of online usernames
 router.get('/online', authenticate, async (req, res, next) => {
   try {
     // Track online users in Redis sorted set
@@ -61,5 +61,15 @@ router.get('/online', authenticate, async (req, res, next) => {
     res.json({ success: true, data: { usernames, count: raw.length } });
   } catch (e) { next(e); }
 });
+*/
+
+router.get('/online', authenticate, async (req: any, res, next) => {
+  try {
+    // Redis sorted set: key=username, score=timestamp
+    const raw = await redis.zrangebyscore('online_users', Date.now() - 5 * 60 * 1000, '+inf');
+    res.json({ success: true, data: { usernames: raw.slice(0, 60), count: raw.length } });
+  } catch (e) { next(e); }
+});
+
 
 export default router;

@@ -16,6 +16,7 @@ const MAX_ATTEMPTS = parseInt(process.env.MAX_OTP_ATTEMPTS || '3');
 export const requestOtp = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { phone } = req.body;
+    const existing = await prisma.user.findUnique({ where: { phone } });
 
     // Check attempts
     const attemptsKey = OTP_ATTEMPTS_KEY(phone);
@@ -45,6 +46,7 @@ export const requestOtp = async (req: Request, res: Response, next: NextFunction
     res.json({
       success: true,
       message: 'OTP sent successfully',
+      isNewUser: !existing,  // <-- hint for frontend to show correct message
       // Return OTP in dev mode only
       ...(process.env.NODE_ENV === 'development' && { debug_otp: otp }),
     });

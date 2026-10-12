@@ -12,6 +12,7 @@ interface AuthedSocket extends WebSocket {
   isAlive?: boolean;
   currentBetId?: string;
   username?: string;
+  phone?:string;
 }
 // ── Round state ────────────────────────────────────────────────
 let currentRoundId: string | null = null;
@@ -37,62 +38,94 @@ export function initWebSocket(server: Server) {
         if (msg.type === 'auth') {
           const payload = verifyAccessToken(msg.token);
           ws.userId = payload.userId;
+
+          // Get user info for live bets display
+          const user = await prisma.user.findUnique({
+            where: { id: ws.userId },
+            select: { phone: true, username: true },
+          });
+          ws.phone = user?.phone || '';
+          ws.username = user?.username || '';
+
+          // Track as online (expire 5 min)
+          const display = ws.username || ws.phone.slice(-4);
+          await redis.zadd('online_users', Date.now(), display);
+          await redis.expire('online_users', 300);
+
           ws.send(JSON.stringify({ type: 'auth_ok', userId: ws.userId }));
-          const user = await prisma.user.findUnique({ where: { id: ws.userId } });
-          ws.username = user?.username || user?.phone?.slice(-4) || 'anonymous';
-          await redis.zadd('online_users', Date.now(), ws.username);
-          await redis.expire('online_users', 300); // 5 min TTL
-          // Send current round state immediately
-          ws.send(JSON.stringify({
-            type: 'round_state',
-            phase: roundPhase,
-            multiplier: currentMultiplier,
-            roundId: currentRoundId,
-          }));
+
+          // Send current round state
+          const round = await crashGameService.getCurrentRound();
+          if (round) {
+            ws.send(JSON.stringify({
+              type: 'round_state',
+              phase: round.phase,
+              multiplier: round.multiplier,
+              roundId: round.roundId,
+            }));
+          }
           return;
         }
 
         if (!ws.userId) { ws.send(JSON.stringify({ type: 'error', message: 'Not authenticated' })); return; }
 
         // ── BET ───────────────────────────────────────────
- if (msg.type === 'bet') {
-  const slot = msg.slot || 'A';
-  try {
-    const bet = await crashGameService.placeBet(
-      ws.userId!, currentRoundId!, Number(msg.amount),
-      msg.autoCashout ? Number(msg.autoCashout) : undefined
-    );
-    ws.send(JSON.stringify({ type: 'bet_placed', betId: bet.id, amount: msg.amount, slot }));
-    broadcast(wss, { type: 'new_bet', amount: msg.amount });
-
-    // Track auto-cashout per slot
-    if (msg.autoCashout) {
-      autoCashoutMap.set(`${ws.userId}-${slot}`, { betId: bet.id, at: Number(msg.autoCashout), slot });
-    }
-  } catch (e: any) {
-    ws.send(JSON.stringify({ type: 'error', message: e.message }));
-  }
-}
+        if (msg.type === 'bet') {
+          const slot = msg.slot || 'A';  // 'A' or 'B'
+          if (roundPhase !== 'waiting') {
+            ws.send(JSON.stringify({ type: 'error', message: 'Round already started. Bet in next round.' }));
+            return;
+          }
+          try {
+            const bet = await crashGameService.placeBet(
+              ws.userId!, currentRoundId!, Number(msg.amount),
+              msg.autoCashout ? Number(msg.autoCashout) : undefined
+            );
+            // Track auto-cashout per slot
+            if (msg.autoCashout) {
+              autoCashoutMap.set(`${ws.userId}-${slot}`, { betId: bet.id, at: Number(msg.autoCashout), slot });
+            }
+            ws.send(JSON.stringify({ type: 'bet_placed', betId: bet.id, amount: msg.amount, slot }));
+            // Broadcast to other players (with shortened phone)
+            const shortPhone = ws.phone ? ws.phone.slice(0, 2) + '**' + ws.phone.slice(-4) : 'Player';
+            broadcast(wss, { type: 'new_bet', amount: msg.amount, phone: ws.phone, username: ws.username || shortPhone });
+          } catch (e: any) {
+            ws.send(JSON.stringify({ type: 'error', message: e.message }));
+          }
+        }
 
         // ── CASHOUT ───────────────────────────────────────
-if (msg.type === 'cashout') {
-  const slot = msg.slot || 'A';
-  try {
-    const result = await crashGameService.cashOut(ws.userId!, currentRoundId!, currentMultiplier);
-    autoCashoutMap.delete(`${ws.userId}-${slot}`);
-    ws.send(JSON.stringify({ type: 'cashout_success', ...result, slot }));
-    broadcast(wss, { type: 'player_cashout', multiplier: currentMultiplier });
-  } catch (e: any) {
-    ws.send(JSON.stringify({ type: 'error', message: e.message }));
-  }
-}
+        if (msg.type === 'cashout') {
+          const slot = msg.slot || 'A';
+          if (roundPhase !== 'flying') {
+            ws.send(JSON.stringify({ type: 'error', message: 'Not in flying phase' }));
+            return;
+          }
+          try {
+            const result = await crashGameService.cashOut(ws.userId!, currentRoundId!, currentMultiplier);
+            autoCashoutMap.delete(`${ws.userId}-${slot}`);
+            ws.send(JSON.stringify({ type: 'cashout_success', ...result, slot }));
+            broadcast(wss, { type: 'player_cashout', multiplier: currentMultiplier, slot });
+          } catch (e: any) {
+            ws.send(JSON.stringify({ type: 'error', message: e.message }));
+          }
+        }
 
       } catch (err) {
         logger.error('WS message error:', err);
       }
     });
 
-    ws.on('close', () => { autoCashoutMap.delete(ws.userId || ''); });
+    ws.on('close', () => { 
+      autoCashoutMap.delete(ws.userId || ''); 
+      // On disconnect, remove from online:
+  if (ws.username || ws.phone) {
+    redis.zrem('online_users', ws.username || ws.phone!.slice(-4));
+  }
+  autoCashoutMap.delete(`${ws.userId}-A`);
+  autoCashoutMap.delete(`${ws.userId}-B`);
+
+    });
     ws.on('error', (err) => logger.error('WS error:', err));
   });
 
@@ -107,6 +140,7 @@ if (msg.type === 'cashout') {
 
   wss.on('close', () => {
     clearInterval(heartbeat);
+
   });
 
   // ── Game loop ──────────────────────────────────────────────
@@ -152,6 +186,7 @@ async function runRound(wss: WebSocketServer) {
     roundId,
     serverSeedHash,
     countdown: 5,
+    currentBets: [], // empty at start
   });
 
   await redis.set('crash:phase', 'waiting', 'EX', 60);

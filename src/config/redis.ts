@@ -10,7 +10,7 @@ export async function connectRedis(): Promise<void> {
       const delay = Math.min(times * 100, 3000);
       return delay;
     },
-    maxRetriesPerRequest: 3,
+    maxRetriesPerRequest: null,
   });
 
   redis.on('connect', () => logger.info('Redis: connected'));

@@ -47413,3 +47413,798 @@ Foreign key constraint violated: `SportBetSelection_matchId_fkey (index)`
     at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
     at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
     at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:19:19 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:19:20 [[31merror[39m]: TokenExpiredError: jwt expired
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyRefreshToken (/home/yobra/Desktop/projects/pesaapp/backend/src/utils/jwt.ts:16:23)
+    at refreshTokens (/home/yobra/Desktop/projects/pesaapp/backend/src/controllers/auth.controller.ts:140:27)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:284:15
+2026-05-07 14:19:20 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:19:20 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:19:20 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:37:00 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:37:00 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:37:00 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:37:00 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:37:00 [[31merror[39m]: JsonWebTokenError: invalid signature
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:171:19
+    at getSecret (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyRefreshToken (/home/yobra/Desktop/projects/pesaapp/backend/src/utils/jwt.ts:16:23)
+    at refreshTokens (/home/yobra/Desktop/projects/pesaapp/backend/src/controllers/auth.controller.ts:140:27)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:284:15
+2026-05-07 14:48:42 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:48:42 [[31merror[39m]: TokenExpiredError: jwt expired
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyRefreshToken (/home/yobra/Desktop/projects/pesaapp/backend/src/utils/jwt.ts:16:23)
+    at refreshTokens (/home/yobra/Desktop/projects/pesaapp/backend/src/controllers/auth.controller.ts:140:27)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:284:15
+2026-05-07 14:48:42 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:55:23 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:55:23 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:55:23 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-07 14:55:23 [[31merror[39m]: JsonWebTokenError: invalid signature
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:171:19
+    at getSecret (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyRefreshToken (/home/yobra/Desktop/projects/pesaapp/backend/src/utils/jwt.ts:16:23)
+    at refreshTokens (/home/yobra/Desktop/projects/pesaapp/backend/src/controllers/auth.controller.ts:140:27)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:284:15
+2026-05-16 10:55:26 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 10:55:26 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 10:55:26 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 10:55:26 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 10:57:04 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 10:57:04 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 10:57:05 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 10:57:05 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:10:27 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:10:28 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:10:28 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:10:28 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:15:38 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:15:38 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:15:39 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:15:39 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:19:31 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:19:31 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:19:31 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:19:32 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:23:05 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:23:05 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:23:05 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:23:05 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:25:50 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:25:50 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:25:50 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:25:50 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:25:51 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:25:51 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:25:52 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:33:54 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:33:54 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:33:54 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:33:55 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:33:55 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:33:56 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:33:56 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:33:57 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:33:58 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:33:59 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:00 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:01 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:02 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:03 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:05 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:06 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:09 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:11 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:13 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:15 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:17 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:19 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:22 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:24 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:27 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:29 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:32 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:35 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:38 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:41 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:44 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:47 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:50 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:53 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:56 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:34:59 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:02 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:05 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:08 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:11 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:14 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:17 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:20 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:23 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:26 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:29 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:32 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:35 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:38 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:41 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:44 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:47 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:50 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:53 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:56 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:35:59 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:02 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:05 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:08 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:14 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:17 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:20 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:23 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:26 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:29 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:32 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:35 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:38 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:41 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:44 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:47 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:50 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:53 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:56 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:36:59 [[31merror[39m]: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+2026-05-16 11:38:11 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.crashRound.findFirst()` invocation in
+/home/yobra/Desktop/projects/pesaapp/backend/src/services/crashGame.service.ts:35:47
+
+  32 async createRound(): Promise<{ roundId: string; crashPoint: number; serverSeedHash: string }> {
+  33   const serverSeed = crypto.randomBytes(32).toString('hex');
+  34   const serverSeedHash = crypto.createHash('sha256').update(serverSeed).digest('hex');
+→ 35   const lastRound = await prisma.crashRound.findFirst(
+The table `public.CrashRound` does not exist in the current database.
+    at $n.handleRequestError (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:7315)
+    at $n.handleAndLogRequestError (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async CrashGameService.createRound (/home/yobra/Desktop/projects/pesaapp/backend/src/services/crashGame.service.ts:35:23)
+    at async runRound (/home/yobra/Desktop/projects/pesaapp/backend/src/services/websocket.service.ts:180:51)
+    at async startGameLoop (/home/yobra/Desktop/projects/pesaapp/backend/src/services/websocket.service.ts:166:7)
+2026-05-16 11:38:16 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.crashRound.findFirst()` invocation in
+/home/yobra/Desktop/projects/pesaapp/backend/src/services/crashGame.service.ts:35:47
+
+  32 async createRound(): Promise<{ roundId: string; crashPoint: number; serverSeedHash: string }> {
+  33   const serverSeed = crypto.randomBytes(32).toString('hex');
+  34   const serverSeedHash = crypto.createHash('sha256').update(serverSeed).digest('hex');
+→ 35   const lastRound = await prisma.crashRound.findFirst(
+The table `public.CrashRound` does not exist in the current database.
+    at $n.handleRequestError (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:7315)
+    at $n.handleAndLogRequestError (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async CrashGameService.createRound (/home/yobra/Desktop/projects/pesaapp/backend/src/services/crashGame.service.ts:35:23)
+    at async runRound (/home/yobra/Desktop/projects/pesaapp/backend/src/services/websocket.service.ts:180:51)
+    at async startGameLoop (/home/yobra/Desktop/projects/pesaapp/backend/src/services/websocket.service.ts:166:7)
+2026-05-16 11:38:21 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.crashRound.findFirst()` invocation in
+/home/yobra/Desktop/projects/pesaapp/backend/src/services/crashGame.service.ts:35:47
+
+  32 async createRound(): Promise<{ roundId: string; crashPoint: number; serverSeedHash: string }> {
+  33   const serverSeed = crypto.randomBytes(32).toString('hex');
+  34   const serverSeedHash = crypto.createHash('sha256').update(serverSeed).digest('hex');
+→ 35   const lastRound = await prisma.crashRound.findFirst(
+The table `public.CrashRound` does not exist in the current database.
+    at $n.handleRequestError (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:7315)
+    at $n.handleAndLogRequestError (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async CrashGameService.createRound (/home/yobra/Desktop/projects/pesaapp/backend/src/services/crashGame.service.ts:35:23)
+    at async runRound (/home/yobra/Desktop/projects/pesaapp/backend/src/services/websocket.service.ts:180:51)
+    at async startGameLoop (/home/yobra/Desktop/projects/pesaapp/backend/src/services/websocket.service.ts:166:7)
+2026-05-16 11:38:26 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.crashRound.findFirst()` invocation in
+/home/yobra/Desktop/projects/pesaapp/backend/src/services/crashGame.service.ts:35:47
+
+  32 async createRound(): Promise<{ roundId: string; crashPoint: number; serverSeedHash: string }> {
+  33   const serverSeed = crypto.randomBytes(32).toString('hex');
+  34   const serverSeedHash = crypto.createHash('sha256').update(serverSeed).digest('hex');
+→ 35   const lastRound = await prisma.crashRound.findFirst(
+The table `public.CrashRound` does not exist in the current database.
+    at $n.handleRequestError (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:7315)
+    at $n.handleAndLogRequestError (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async CrashGameService.createRound (/home/yobra/Desktop/projects/pesaapp/backend/src/services/crashGame.service.ts:35:23)
+    at async runRound (/home/yobra/Desktop/projects/pesaapp/backend/src/services/websocket.service.ts:180:51)
+    at async startGameLoop (/home/yobra/Desktop/projects/pesaapp/backend/src/services/websocket.service.ts:166:7)
+2026-05-16 11:54:23 [[31merror[39m]: Error: No token provided
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:18:13)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 11:57:26 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 11:57:26 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 11:57:26 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 11:57:26 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 11:57:26 [[31merror[39m]: JsonWebTokenError: invalid signature
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:171:19
+    at getSecret (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyRefreshToken (/home/yobra/Desktop/projects/pesaapp/backend/src/utils/jwt.ts:16:23)
+    at refreshTokens (/home/yobra/Desktop/projects/pesaapp/backend/src/controllers/auth.controller.ts:140:27)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:284:15
+2026-05-16 12:18:57 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 12:18:57 [[31merror[39m]: JsonWebTokenError: invalid signature
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:171:19
+    at getSecret (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyRefreshToken (/home/yobra/Desktop/projects/pesaapp/backend/src/utils/jwt.ts:16:23)
+    at refreshTokens (/home/yobra/Desktop/projects/pesaapp/backend/src/controllers/auth.controller.ts:140:27)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:284:15
+2026-05-16 12:18:57 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 12:29:12 [[31merror[39m]: Error: Invalid value
+    at validate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/validate.ts:9:17)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at middleware (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-05-16 12:30:32 [[31merror[39m]: Error: Invalid value
+    at validate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/validate.ts:9:17)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at middleware (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-05-16 12:32:27 [[31merror[39m]: Error: No token provided
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:18:13)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 12:33:10 [[31merror[39m]: Error: Admin access required
+    at requireAdmin (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:43:17)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:33:5)
+2026-05-16 12:33:37 [[31merror[39m]: Error: Admin access required
+    at requireAdmin (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:43:17)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:33:5)
+2026-05-16 12:35:21 [[31merror[39m]: Error: No token provided
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:18:13)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 12:35:40 [[31merror[39m]: Error: No token provided
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:18:13)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 12:39:00 [[31merror[39m]: Error: Valid phone required
+    at validate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/validate.ts:9:17)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at middleware (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-05-16 12:39:36 [[31merror[39m]: Error: Valid phone required
+    at validate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/validate.ts:9:17)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at middleware (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-05-16 12:40:28 [[31merror[39m]: Error: Valid phone required
+    at validate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/validate.ts:9:17)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at middleware (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-05-16 12:47:10 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 12:47:32 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 12:47:32 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 12:47:32 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 12:47:32 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 12:47:32 [[31merror[39m]: JsonWebTokenError: invalid signature
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:171:19
+    at getSecret (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyRefreshToken (/home/yobra/Desktop/projects/pesaapp/backend/src/utils/jwt.ts:16:23)
+    at refreshTokens (/home/yobra/Desktop/projects/pesaapp/backend/src/controllers/auth.controller.ts:140:27)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:284:15
+2026-05-16 12:54:57 [[31merror[39m]: Error: No token provided
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:18:13)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 13:06:15 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 13:06:15 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 13:06:15 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 13:06:16 [[31merror[39m]: Error: Token expired
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:36:55)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 13:06:16 [[31merror[39m]: JsonWebTokenError: invalid signature
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:171:19
+    at getSecret (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyRefreshToken (/home/yobra/Desktop/projects/pesaapp/backend/src/utils/jwt.ts:16:23)
+    at refreshTokens (/home/yobra/Desktop/projects/pesaapp/backend/src/controllers/auth.controller.ts:140:27)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:284:15
+2026-05-16 13:06:31 [[31merror[39m]: Error: No token provided
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:18:13)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+2026-05-16 13:08:15 [[31merror[39m]: Error: No token provided
+    at authenticate (/home/yobra/Desktop/projects/pesaapp/backend/src/middleware/auth.middleware.ts:18:13)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/yobra/Desktop/projects/pesaapp/backend/node_modules/express/lib/router/index.js:328:13)

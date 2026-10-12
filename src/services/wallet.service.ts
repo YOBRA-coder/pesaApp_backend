@@ -134,15 +134,6 @@ export class WalletService {
 
     logger.info(`Deposit completed: ${mpesaTx.transactionId}`);
   }
-
-
-
-
-
-
-
-
-
   
   // ─── Withdraw (B2C) ─────────────────────────────────
   async initiateWithdrawal(userId: string, phone: string, amount: number) {

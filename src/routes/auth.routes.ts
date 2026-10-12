@@ -22,4 +22,19 @@ router.post('/verify-otp',
 router.post('/refresh', refreshTokens);
 router.post('/logout', logout);
 
+
+// 3. Jaribu 500 Internal Server Error (Hitilafu ya seva)
+router.get('/api/database', (req, res) => {
+ try {
+        throw new Error("Database connection failed!");
+    } catch (err) {
+        // Hapa tunatengeneza muonekano wa logi kwenye terminal ya seva
+        console.error(`\n[${new Date().toISOString()}] 🚨 ERROR 500: ${req.method} ${req.url}`);
+        console.error((err as Error).stack); // Hii inaleta ule mstari mrefu wa kosa (Stack Trace)
+        console.error("--------------------------------------------------\n");
+
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+});
+
 export default router;
